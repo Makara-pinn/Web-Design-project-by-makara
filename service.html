@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coffee Shop</title>
   <link rel="stylesheet" href="./css/service.css">
+  <link rel="stylesheet" href="./css/nav.css">
 
 
 </head>
@@ -13,31 +14,24 @@
 <body>
 
   <!-- Navbar -->
-  <div class="head-container">
-    <div class="head-one">
-      <img src="./img/download (2).png" alt="TecLast Logo">
-    </div>
-    <div class="head-two">
-      <div class="a">
-        <a href="/index.html">HOME</a>
-        <a href="/about.html">ABOUT</a>
-        <a href="#">SERVICE</a>
+  <header class="head-container">
+    <a class="head-one" href="./index.html" aria-label="Adventure Coffee Home">
+      <img src="./img/download (2).png" alt="Adventure Coffee logo">
+    </a>
 
-        <a href="/contact.html">CONTACT</a>
+    <nav class="head-nav" aria-label="Primary">
+      <a href="./index.html">HOME</a>
+      <a href="./about.html">ABOUT</a>
+      <a class="is-active" href="./service.html">SERVICE</a>
+      <a href="./contact.html">CONTACT</a>
+    </nav>
 
-      </div>
-      <div class="all">
-        <div class="search">
-          <input type="text" placeholder="Type to Search">
-          <button>Search</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="head-three">
-      <i class='bx bx-search'></i>
-    </div>
-  </div>
+    <form class="search" role="search" action="#" method="get">
+      <label class="sr-only" for="site-search">Search</label>
+      <input id="site-search" name="q" type="search" placeholder="Type to Search" />
+      <button type="submit">Search</button>
+    </form>
+  </header>
   <!-- Hero Section -->
   <div class="hero">
 

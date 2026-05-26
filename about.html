@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,33 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/nav.css">
 </head>
 
 <body>
-    <div class="head-container">
-        <div class="head-one">
-            <img src="./img/download (2).png" alt="TecLast Logo">
-        </div>
-        <div class="head-two">
-            <div class="a">
-                <a href="/index.html">HOME</a>
-                <a href="#">ABOUT</a>
-                <a href="/service.html">SERVICE</a>
-                <a href="/contact.html">CONTACT</a>
+    <header class="head-container">
+        <a class="head-one" href="./index.html" aria-label="Adventure Coffee Home">
+            <img src="./img/download (2).png" alt="Adventure Coffee logo">
+        </a>
 
-            </div>
-            <div class="all">
-                <div class="search">
-                    <input type="text" placeholder="Type to Search">
-                    <button>Search</button>
-                </div>
-            </div>
-        </div>
+        <nav class="head-nav" aria-label="Primary">
+            <a href="./index.html">HOME</a>
+            <a class="is-active" href="./about.html">ABOUT</a>
+            <a href="./service.html">SERVICE</a>
+            <a href="./contact.html">CONTACT</a>
+        </nav>
 
-        <div class="head-three">
-            <i class='bx bx-search'></i>
-        </div>
-    </div>
+        <form class="search" role="search" action="#" method="get">
+            <label class="sr-only" for="site-search">Search</label>
+            <input id="site-search" name="q" type="search" placeholder="Type to Search" />
+            <button type="submit">Search</button>
+        </form>
+    </header>
     <div class="action-section">
 
         <div class="cation-text">
@@ -173,15 +168,36 @@
             </div>
 
             <!-- Center text -->
-            <div class="content">
-
-                <h2>Our Action</h2>
+             <div class="content">
+ 
+                 <h2>Our Action</h2>
                 <p>
-                    This is the text section inside the card. You can write any paragraph here — description, details,
-                    or information about your topic. You can add more text, buttons, or other HTML elements in this
-                    middle area.
+                    We focus on real practice — from roasting basics to cake decoration — so students learn the skills
+                    used in a professional kitchen. Every session includes guidance, tasting, and feedback to improve
+                    technique step-by-step.
                 </p>
-            </div>
+                <ul class="action-list">
+                    <li>Hands-on training with tools and safety rules</li>
+                    <li>Small group coaching and teamwork activities</li>
+                    <li>Recipe planning, prep, and quality checking</li>
+                    <li>Presentation skills: plating, latte art, and cake design</li>
+                </ul>
+                <div class="action-meta">
+                    <div class="meta-item">
+                        <strong>4+</strong>
+                        <span>Modules</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong>2</strong>
+                        <span>Practice Days / Week</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong>100%</strong>
+                        <span>Hands-on</span>
+                    </div>
+                </div>
+                <a href="/contact.html" class="action-cta">Join a Class</a>
+             </div>
 
             <!-- Right images -->
             <div class="side">
@@ -235,15 +251,20 @@
         </div>
     </div>
 
-    <div class="womean">
-
-        <h1> Our PN student’s paths</h1>
-        <p>We provide technical training, professional and personal development training in our centers in Southeast
-            Asia, and a preparatory program to university in our center in Madagascar. In our centers, we cover the
-            basic needs of our students, including their wellbeing.
-            From their first day of school, until graduation and their first job, we support each of our students
-             <br>their journey.</p>
-    </div>
+    <section class="paths-section">
+        <div class="paths-wrap">
+            <div class="paths-content">
+                <h2>Our PN students’ paths</h2>
+                <p>We provide technical training, professional and personal development training in our centers in
+                    Southeast Asia, and a preparatory program to university in our center in Madagascar. In our centers,
+                    we cover the basic needs of our students, including their wellbeing. From their first day of school,
+                    until graduation and their first job, we support each of our students on their journey.</p>
+            </div>
+            <div class="paths-media">
+                <img src="./img/about.tmg/image copy 16.png" alt="Students learning and training">
+            </div>
+        </div>
+    </section>
     <div class="contact">
 
             <h1>Contact Us</h1>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1760" height="624" viewBox="0 0 1760 624">
+  <defs>
+    <filter id="softShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.18" />
+    </filter>
+
+    <clipPath id="photoClip">
+      <rect x="58" y="58" width="420" height="508" rx="34" ry="34" />
+    </clipPath>
+
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e9e2df" />
+      <stop offset="1" stop-color="#e9e2df" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect x="0" y="0" width="1760" height="624" fill="url(#bg)" />
+
+  <!-- Left photo card -->
+  <g filter="url(#softShadow)">
+    <rect x="36" y="36" width="464" height="552" rx="40" ry="40" fill="rgba(255,255,255,0.55)" />
+  </g>
+  <g clip-path="url(#photoClip)">
+    <!-- Put your own photo here if you want -->
+    <image href="image%20copy%207.png" x="58" y="58" width="420" height="508" preserveAspectRatio="xMidYMid slice" />
+  </g>
+
+  <!-- Right text card -->
+  <g filter="url(#softShadow)">
+    <rect x="560" y="214" width="1140" height="220" rx="34" ry="34" fill="#ffffff" />
+  </g>
+
+  <!-- Text (3 lines like the example) -->
+  <text x="622" y="292" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#b24a2a">
+    <tspan x="622" dy="0">
+      my name is narasmit. I'm a teacher .I'm 29 years old.My experence in this school is 11years old I have my
+    </tspan>
+    <tspan x="622" dy="42">
+      coffe store at siem Reap to position that teaching about caramell, babe cake. pop cake,caca cake , popoca
+    </tspan>
+    <tspan x="622" dy="42">
+      cake ....
+    </tspan>
+  </text>
+</svg>
+

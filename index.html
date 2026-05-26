@@ -2,48 +2,42 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
-    <link rel="stylesheet" href="/css/accessories.css">
-    <link href='./css/style.css' rel='stylesheet'>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nav.css">
 </head>
 
 <body>
-    <div class="head-container">
-        <div class="head-one">
-            <img src="./img/download (2).png" alt="TecLast Logo">
-        </div>
-        <div class="head-two">
-            <div class="a">
-                <a href="#">HOME</a>
-                <a href="./about.html">ABOUT</a>
-                <a href="./service.html">SERVICE</a>
-                <a href="./contact.html">CONTACT</a>
+    <header class="head-container">
+        <a class="head-one" href="./index.html" aria-label="Adventure Coffee Home">
+            <img src="./img/download (2).png" alt="Adventure Coffee logo">
+        </a>
 
-            </div>
-            <div class="all">
-                <div class="search">
-                    <input type="text" placeholder="Type to Search">
-                    <button>Search</button>
-                </div>
-            </div>
-        </div>
+        <nav class="head-nav" aria-label="Primary">
+            <a class="is-active" href="./index.html">HOME</a>
+            <a href="./about.html">ABOUT</a>
+            <a href="./service.html">SERVICE</a>
+            <a href="./contact.html">CONTACT</a>
+        </nav>
 
-        <div class="head-three">
-            <i class='bx bx-search'></i>
-        </div>
-    </div>
+        <form class="search" role="search" action="#" method="get">
+            <label class="sr-only" for="site-search">Search</label>
+            <input id="site-search" name="q" type="search" placeholder="Type to Search" />
+            <button type="submit">Search</button>
+        </form>
+    </header>
     <div class="main-container">
         <div class="inchs">
             <div class="paragraph">
-                <div class="school">
-                    <h3>WELCOME TO SCHOOL</h3>
-                </div>
-                <div class="adventure">
-                    <h3 style="font-size: 99.99%;">ADVENTURE <span
-                            style="color: rgba(223, 152, 11, 0.974);">COFFEE</span>
-                        
-                        </h3>
+                <div class="hero-content">
+                    <h1>Discover The Art<br>Of Perfect Coffee.</h1>
+                    <p>Experience the difference as we meticulously select and roast the finest beans to create a truly unforgettable cup of coffee. Join us on a journey of taste and awaken your senses, one sip at a time.</p>
+                    <a class="hero-cta" href="#contact">
+                        <span>Order Now</span>
+                        <span class="hero-cta-icon" aria-hidden="true">&rarr;</span>
+                    </a>
                 </div>
 
             </div>
@@ -51,57 +45,27 @@
         </div>
 
     </div>
-    </div>
-    <div class="body-containers">
-
-    </div>
-    <div class="body-two">
-        <div class="body-image">
-
-            <div class="control">
-                <div class="plus">
-                    <h1>About our Coffee</h1>
-                </div>
-                <div class="text-main">
-                    <p>This school in 2015 in Phnom Penh, School Coffee Adventure (SCA) offers a 2-year our
-                        training students in this Skill, based on a holistic approach including coffee business
-                        skills and
-                        professional skill (or soft skills). While at SCA, the basic needs of our students
-                        create(coffee,cake ,expresso coffee), are covered our school.</p>
-                </div>
-                <div class="all-text">
-                    <div class="control-pic">
-
-                        <img src="./img/coffee.jpg" alt="">
-                    </div>
-                    <div class="text-left">
-                        <h1>Country context</h1>
-                        <p>In 2017, the school opened its doors and accepted 20 students <br>for the first semester,
-                            with 50 students selected from among the students.</p>
-                        <div class="text-1">
-                            <p>In 2020, the school provided scholarships to poor students <br>and began advertising
-                                to schools and other places. <br> The school received 102 students,<br> more than
-                                spa 80% of whom were admitted in the first semester. <br> Of the students, <br> 80%
-                                were selected and 60% were admitted.</p>
-                        </div>
-                        <div class="text-2">
-                            <p>50.50% in 2025 of poor students also receive and attend school. And the enrollment
-                                rate is approximately 50.12%.</p>
-                        </div>
-                    </div>
-
-                </div>
-
+    <section class="about-section" id="about">
+        <div class="about-wrap">
+            <div class="about-media">
+                <img src="./img/coffee.jpg" alt="Coffee training at SCA">
+            </div>
+            <div class="about-content">
+                <div class="about-eyebrow">About us</div>
+                <h2 class="about-title">Explore more about us</h2>
+                <p>This school in 2015 in Phnom Penh, School Coffee Adventure (SCA) offers a 2-year training program,
+                    based on a holistic approach including coffee business skills and professional (soft) skills.</p>
+                <p>In 2017, the school opened its doors and accepted 20 students for the first semester, with 50
+                    students selected. In 2020, the school provided scholarships to poor students and expanded
+                    recruitment and outreach.</p>
             </div>
         </div>
+    </section>
 
-    </div>
     <div class="impact-section">
 
-        <h2>Cambodia</h2>
         <h1>Our Local Impact</h1>
-        <p>Since 2015, SCA Cambodia has transformed the lives of nearly <span style="color:#00aaff;">2000
-                people</span>
+        <p>Since 2015, SCA Cambodia has transformed the lives of nearly <span>2000 people</span>
             (students & their families) through coffee skill education.</p>
 
         <div class="impact-grid">
@@ -135,42 +99,27 @@
 
     </div>
 
-    <div class="body-image">
-
-        <div class="control">
-            <div class="plus">
-                <h1>Our Training Program</h1>
+    <section class="training-section" id="training">
+        <div class="training-wrap">
+            <div class="training-content">
+                <div class="training-eyebrow">Our training program</div>
+                <h2 class="training-title">Explore more about our training</h2>
+                <p>Coffee Adventure has implemented an innovative and comprehensive training program in each of its
+                    centers, focused on long-term employability.</p>
+                <p>Coffee Adventure in Cambodia (SCA) offers a 2-year full-time training program with a major in meeting
+                    the needs of local companies in the industry, for underprivileged Cambodian youths.</p>
+                <p>At the end of the training, students receive an Associate Degree in Computer Science with a major in
+                    coffee business, as well as a Coffee Adventure school certificate.</p>
             </div>
-            <div class="text-main">
-                <p>Coffee Adventure has implemented an innovative and comprehensive training
-                    program in each of its centers, focused on long-term employability.</p>
+            <div class="training-media">
+                <img src="./img/image copy 5.png" alt="Coffee training program">
             </div>
-            <div class="all-text">
-                <div class="control-pic">
-
-                    <img src="./img/image copy 5.png" alt="">
-                </div>
-                <div class="text-lef">
-                    <h1>An associate degree in coffee sector</h1>
-                    <p>Coffe Adventure in Cambodia (SCA) offers a 2-year full time <br> training team with a major in
-                        meeting the needs of local companies <br> in the industry, for underprivileged Cambodian youths.
-                    </p>
-                    <div class="text-1">
-                        <p>At the end of the training, students receive an Associate Degree <br> in Computer Science
-                            with a major in coffee business, as well as a <br>coffee Adventure school certificate.</p>
-                    </div>
-                    <div class="text-2">
-                        <p>Throughout their training, students benefit from a comprehensive <br> professional and
-                            technical skills training, and strong support for their <br> professional integration. They
-                            also participate in extra-curricular and <br> personal development activities.</p>
-                    </div>
-                </div>
-
-            </div>
-
         </div>
-    </div>
-    <div class="section">
+    </section>
+
+    <section class="posts-section" id="posts">
+        <div class="posts-wrap">
+              <div class="section">
 
         <div class="ttt">
             <h1>Our Team Cooking Cake</h1>
@@ -178,58 +127,65 @@
             <p>The SCA team is committed to fostering a better future for Cambodian youths.develop for our students fine
                 skill of cake.</p>
         </div>
+        
     </div>
+            <div class="posts-grid">
+                <article class="post-card">
+                    <a class="post-media" href="#">
+                        <img src="./img/image%20copy%2010.png" alt="Coffee skills ebook cover">
+                    </a>
+                    <div class="post-body">
+                        <h3 class="post-heading"><a href="#">Free eBook: Coffee Skills Guide 2026</a></h3>
+                        <div class="post-meta">
+                            <span>Coffee Education</span>
+                            <span>09 September</span>
+                        </div>
+                    </div>
+                </article>
 
-    <div class="all-team-1">
+                <article class="post-card">
+                    <a class="post-media" href="#">
+                        <img src="./img/image%20copy%2012.png" alt="Coffee tools and equipment">
+                    </a>
+                    <div class="post-body">
+                        <h3 class="post-heading"><a href="#">Tools for Better Espresso Training</a></h3>
+                        <div class="post-meta">
+                            <span>Resources</span>
+                            <span>08 September</span>
+                        </div>
+                    </div>
+                </article>
 
-        <div class="section">
-            <div class="img-wrapper">
-                <img src="./img/image copy 7.png" alt="">
-            </div>
-            <div class="text-wrapper">
-                <p>
-                    my name is narasmit. I'm a teacher .I'm 29 years old.My experence in this school is 11years old I
-                    have my coffe store at siem Reap to position that teaching about caramell, babe cake. pop cake,caca
-                    cake , popoca cake .....
+                <article class="post-card">
+                    <a class="post-media" href="#">
+                        <img src="./img/image%20copy%2014.png" alt="Latte art practice">
+                    </a>
+                    <div class="post-body">
+                        <h3 class="post-heading"><a href="#">Improving Latte Art Step-by-Step</a></h3>
+                        <div class="post-meta">
+                            <span>Barista Tips</span>
+                            <span>05 September</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <a class="post-media" href="#">
+                        <img src="./img/image%20copy%2016.png" alt="Student success story">
+                    </a>
+                    <div class="post-body">
+                        <h3 class="post-heading"><a href="#">Student Story: From Training to Business</a></h3>
+                        <div class="post-meta">
+                            <span>Community</span>
+                            <span>01 September</span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </div>
+    </section>
 
-        <div class="section reverse">
-            <div class="img-wrappr">
-                <img src="./img/image copy 6.png" alt="">
-            </div>
-            <div class="text-wrapper">
-                <p>
-                    my name is vannasoro. I'm a teacher .I'm 35 years old.My experence in this school is 10 years ago I
-                    have my own business off coffe in canada and have my cape cake shop in canada also that teaching
-                    about taramisu, baball cake. panch cake,cappe cake ,and more then that .....
-            </div>
-        </div>
-        <div class="section">
-            <div class="img-wrapper">
-                <img src="./img/image copy 9.png" alt="">
-            </div>
-            <div class="text-wrapper">
-                <p>
-                    my name is narasmit. I'm a teacher .I'm 29 years old.My experence in this school is 11years old I
-                    have my coffe store at siem Reap to position that teaching about caramell, babe cake. pop cake,caca
-                    cake , popoca cake .....
-            </div>
-        </div>
 
-        <div class="section reverse">
-            <div class="img-wrappr">
-                <img src="./img/image copy 11.png" alt="">
-            </div>
-            <div class="text-wrapper">
-                <p>
-                    my name is vannasoro. I'm a teacher .I'm 35 years old.My experence in this school is 10 years ago I
-                    have my own business off coffe in canada and have my cape cake shop in canada also that teaching
-                    about taramisu, baball cake. panch cake,cappe cake ,and more then that .....
-            </div>
-        </div>
-
-    </div>
     <div class="section">
 
         <div class="ttt">
@@ -260,7 +216,8 @@
                <img src="./img/logo star b.png" alt="">
            </div>
         </marquee>
-        <div class="contact">
+    </div>
+    <div class="contact" id="contact">
 
             <h1>Contact Us</h1>
             <div class="contact-container">
@@ -292,41 +249,41 @@
         </div>
         
 
-        <!-- Footer -->
-        <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer">
             <div class="footer-column">
-                <h3 style="font-size: 20px;">ABOUT</h3>
-                <a href="#" style="font-size: 16px;">Contact Us</a>
-                <a href="#" style="font-size: 16px;">Blog</a>
-                <a href="#" style="font-size: 16px;">Sustainability</a>
-                <a href="#" style="font-size: 16px;">FAQ</a>
-                <a href="#" style="font-size: 16px;">Career</a>
+                <h3>ABOUT</h3>
+                <a href="#">Contact Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Sustainability</a>
+                <a href="#">FAQ</a>
+                <a href="#">Career</a>
             </div>
             <div class="footer-column">
-                <h3 style="font-size: 20px;">SHOP</h3>
-                <a href="#" style="font-size: 16px;">Products</a>
-                <a href="#" style="font-size: 16px;">Collections</a>
-                <a href="#" style="font-size: 16px;">Where To Buy</a>
-                <a href="#" style="font-size: 16px;">Warranty</a>
-                <a href="#" style="font-size: 16px;">Terms of Use</a>
-                <a href="#" style="font-size: 16px;">Privacy Policy</a>
+                <h3>SHOP</h3>
+                <a href="#">Products</a>
+                <a href="#">Collections</a>
+                <a href="#">Where To Buy</a>
+                <a href="#">Warranty</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy Policy</a>
             </div>
             <div class="footer-column">
-                <h3 style="font-size: 20px;">SUPPORT</h3>
-                <a href="#" style="font-size: 16px;">Where To Buy</a>
-                <a href="#" style="font-size: 16px;">Contact Us</a>
-                <a href="#" style="font-size: 16px;">Wholesale</a>
-                <a href="#" style="font-size: 16px;">Influencer Project</a>
-                <a href="#" style="font-size: 16px;">Firmware Download</a>
-                <a href="#" style="font-size: 16px;">Manuals</a>
-                <a href="#" style="font-size: 16px;">Live Chat</a>
+                <h3>SUPPORT</h3>
+                <a href="#">Where To Buy</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Wholesale</a>
+                <a href="#">Influencer Project</a>
+                <a href="#">Firmware Download</a>
+                <a href="#">Manuals</a>
+                <a href="#">Live Chat</a>
             </div>
             <div class="footer-column newsletter">
                 <h3>SUBSCRIBE NEWSLETTER</h3>
                 <p>Sign up to get the latest news on sales, product launches and more.</p>
                 <input type="email" placeholder="Your e-mail">
-                <button>→</button>
-                <div class="chat-button" style="margin-top: 30px;">chat</div>
+                <button>&rarr;</button>
+                <div class="chat-button">chat</div>
             </div>
             <div class="footer-column">
                 <h3>FOLLOW TECLAST</h3>
@@ -340,14 +297,12 @@
                     <a href="#">ig</a>
                 </div>
                 <div class="social-icons">
-                    <a href="#">♪</a>
+                    <a href="#">&#9834;</a>
                     <a href="#">in</a>
                 </div>
             </div>
             <div class="powered-by">Teclast | Powered by Shopify</div>
-        </footer>
-
-    </div>
+    </footer>
 
 
 
